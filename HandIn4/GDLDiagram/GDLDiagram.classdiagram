@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="02374202-ee7e-4c3b-9b86-0fd598de68d8" name="GDLDiagram" linkedPackageId="9fb7cca8-8aa3-4c7c-a066-136a5a354571" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4ae073a2-d7f3-4342-9392-b6e36567e89d">
+      <profileInstance Id="8b765a00-8bb7-49d3-8d5e-4036bf1ca8ee" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ba85a428-3924-4980-99ea-98d91628ca81">
+      <profileInstance Id="fc8b20b1-2180-4555-b1f8-3fa23d65814d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b04b0a99-c31d-4fc5-81d2-892fd3050e34" name="SystemData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="919935c7-393b-418b-a6a5-8602af26b81a" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="75731490-6984-4f2c-bcb2-694f61a860ed" name="Reading" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd377904-f24c-4d16-8a0d-5e8032043b97" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ffa69b28-90d3-4d38-a475-ab4e8b479040" name="SensorCharacteristic" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f819e454-a759-4517-bdc8-46931efd3286" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9629e946-6c72-4c2a-a541-dd366185d723" name="Class4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="01accac3-1a6a-417b-97f1-3869d36a270f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="80aae0ba-817b-4861-b452-ca664dcbd298" name="AppartmentCharacteristic" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18ba58be-ced5-4aac-81e5-4774894dd134" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d6b086ec-03bc-4aef-bac1-f6eac91f4c6d" name="SensorData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d66dbc0-1df3-4fcf-b7ff-8be39f35e663" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9fb7cca8-8aa3-4c7c-a066-136a5a354571" name="GDLDiagram">
+    <elementDefinition Id="5813a05d-bd31-4ba9-82ae-c3b797145bdc" />
+  </package>
+</logicalClassDesignerModel>
