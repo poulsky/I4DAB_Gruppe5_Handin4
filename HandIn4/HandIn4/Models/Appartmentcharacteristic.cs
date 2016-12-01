@@ -13,4 +13,9 @@ namespace HandIn4.Model
         public int Floor { get; set; }
         public int appartmentId { get; set; }
     }
+
+    class AppartmentcharacteristicList
+    {
+        private List<Appartmentcharacteristic> Appartmentcharacteristics { get; set; }
+    }
 }
