@@ -65,6 +65,8 @@
     <Compile Include="Models\SensorData.cs" />
     <Compile Include="Models\SystemData.cs" />
     <Compile Include="Utility\APIGetJSON.cs" />
+    <Compile Include="Utility\SystemDataJSON.cs" />
+    <Compile Include="Utility\SensorDataJSON.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
