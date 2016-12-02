@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HandIn4.Model;
 using HandIn4.Utility;
+using System.Data.Entity;
 
 namespace HandIn4
 {
@@ -22,9 +23,9 @@ namespace HandIn4
 
             
 
-            foreach (var sensor in mySystemData.sensorCharacteristic)
+            foreach (var sensor in mySensorData.reading)
             {
-                System.Console.WriteLine(sensor.description);
+                System.Console.WriteLine(sensor.value);
             }
 
         }

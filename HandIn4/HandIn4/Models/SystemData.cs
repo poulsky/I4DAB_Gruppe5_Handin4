@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HandIn4.Model
 {
-    class SystemData
+    public class SystemData
     {
+        public int SystemDataId { get; set; } //eget felt
         public Appartmentcharacteristic[] appartmentCharacteristic { get; set; }
         public DateTime timestamp { get; set; }
         public int version { get; set; }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HandIn4.Model
 {
-    class SensorData
+    public class SensorData
     {
+        public int SensorDataId { get; set; }
         public int version { get; set; }
         public DateTime timestamp { get; set; }
         public Reading[] reading { get; set; }
