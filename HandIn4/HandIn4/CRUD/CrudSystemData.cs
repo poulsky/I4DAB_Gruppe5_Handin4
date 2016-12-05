@@ -32,6 +32,18 @@ namespace HandIn4.CRUD
             return db.SystemDatas.SingleOrDefault(x => x.SystemDataId == id);
         }
 
+        public void Update(SystemData data)
+        {
+            var item = this.Read(data.SystemDataId);
+
+            if (item != null)
+            {
+                item.timestamp = data.timestamp;
+                item.version = item.version;
+
+            }
+        }
+
         public void Delete(int id)
         {
             var item = db.SystemDatas.SingleOrDefault(x => x.SystemDataId == id);
