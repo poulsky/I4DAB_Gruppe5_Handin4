@@ -67,9 +67,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUD\CrudAppChar.cs" />
+    <Compile Include="CRUD\CrudReading.cs" />
+    <Compile Include="CRUD\CrudSensorChar.cs" />
+    <Compile Include="CRUD\CrudSensorData.cs" />
+    <Compile Include="CRUD\CrudSystemData.cs" />
     <Compile Include="Migrations\201612020852288_Ids.cs" />
     <Compile Include="Migrations\201612020852288_Ids.Designer.cs">
       <DependentUpon>201612020852288_Ids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612021107298_readingvirtual.cs" />
+    <Compile Include="Migrations\201612021107298_readingvirtual.Designer.cs">
+      <DependentUpon>201612021107298_readingvirtual.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
@@ -93,6 +102,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612020852288_Ids.resx">
       <DependentUpon>201612020852288_Ids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612021107298_readingvirtual.resx">
+      <DependentUpon>201612021107298_readingvirtual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

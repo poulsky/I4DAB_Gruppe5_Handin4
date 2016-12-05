@@ -10,7 +10,7 @@ namespace HandIn4.Models
 {
     public class Context : DbContext
     {
-        public Context() : base("name=Model2")
+        public Context() : base("name=Model1")
         {
             
         }

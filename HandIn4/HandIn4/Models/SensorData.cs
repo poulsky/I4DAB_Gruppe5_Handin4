@@ -11,6 +11,6 @@ namespace HandIn4.Model
         public int SensorDataId { get; set; }
         public int version { get; set; }
         public DateTime timestamp { get; set; }
-        public Reading[] reading { get; set; }
+        public virtual Reading[] reading { get; set; }
     }
 }
