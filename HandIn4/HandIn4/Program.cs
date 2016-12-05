@@ -26,12 +26,12 @@ namespace HandIn4
                 SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
                 mySystemData = sensorCharacteristicJson.GetAppartment();
 
-                //var sd = db.SensorDatas.Include(a => a.reading);
-                //db.SaveChanges();
-
-                CRUD.CrudSystemData crudSystemData = new CrudSystemData();
-                crudSystemData.Create(mySystemData);
-
+                CrudSensorData myCrudSensorData = new CrudSensorData();
+               // myCrudSensorData.Create(mySensorData);
+                 
+                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
+                myCrudSensorData.Delete(3);
+                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
                 //foreach (var reading in mySensorData.reading)
                 //{
                 //    db.Readings.Add(reading);

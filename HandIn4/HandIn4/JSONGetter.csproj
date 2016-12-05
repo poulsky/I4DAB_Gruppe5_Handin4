@@ -67,11 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRUD\CrudAppChar.cs" />
-    <Compile Include="CRUD\CrudReading.cs" />
-    <Compile Include="CRUD\CrudSensorChar.cs" />
-    <Compile Include="CRUD\CrudSensorData.cs" />
-    <Compile Include="CRUD\CrudSystemData.cs" />
     <Compile Include="Migrations\201612020852288_Ids.cs" />
     <Compile Include="Migrations\201612020852288_Ids.Designer.cs">
       <DependentUpon>201612020852288_Ids.cs</DependentUpon>
