@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HandIn4.Model;
 using HandIn4.Utility;
 using System.Data.Entity;
+using HandIn4.CRUD;
 using HandIn4.Models;
 
 namespace HandIn4
@@ -25,9 +26,12 @@ namespace HandIn4
                 SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
                 mySystemData = sensorCharacteristicJson.GetAppartment();
 
-                var sd = db.SensorDatas.Include(a => a.reading);
-                db.SaveChanges();
-
+                CrudSensorData myCrudSensorData = new CrudSensorData();
+               // myCrudSensorData.Create(mySensorData);
+                 
+                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
+                myCrudSensorData.Delete(3);
+                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
                 //foreach (var reading in mySensorData.reading)
                 //{
                 //    db.Readings.Add(reading);
