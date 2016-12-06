@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using HandIn4.Model;
 using HandIn4.Utility;
 using System.Data.Entity;
-using HandIn4.CRUD;
 using HandIn4.Models;
 
 namespace HandIn4
@@ -20,36 +19,32 @@ namespace HandIn4
                 SensorData mySensorData = new SensorData();
                 SystemData mySystemData = new SystemData();
                 Reading myReading = new Reading();
+                
                 SensorDataJSON sensorDataJson = new SensorDataJSON();
                 mySensorData = sensorDataJson.GetAppartment();
 
                 SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
                 mySystemData = sensorCharacteristicJson.GetAppartment();
+                
+           
+                foreach (var reading in mySensorData.reading)
+                {
+                    db.Readings.Add(reading);
+                }
+                db.SaveChanges();
 
-                CrudSensorData myCrudSensorData = new CrudSensorData();
-               // myCrudSensorData.Create(mySensorData);
-                 
-                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
-                myCrudSensorData.Delete(3);
-                Console.WriteLine(myCrudSensorData.Read(3).timestamp);
-                //foreach (var reading in mySensorData.reading)
-                //{
-                //    db.Readings.Add(reading);
-                //}
-                //db.SaveChanges();
+                foreach (var sensorChar in mySystemData.sensorCharacteristic)
+                {
+                    db.Sensorcharacteristics.Add(sensorChar);
 
-                //foreach (var sensorChar in mySystemData.sensorCharacteristic)
-                //{
-                //    db.Sensorcharacteristics.Add(sensorChar);
+                }
+                db.SaveChanges();
 
-                //}
-                //db.SaveChanges();
-
-                //foreach (var appChar in mySystemData.appartmentCharacteristic)
-                //{
-                //    db.Appartmentcharacteristics.Add(appChar);
-                //}
-                //db.SaveChanges();
+                foreach (var appChar in mySystemData.appartmentCharacteristic)
+                {
+                    db.Appartmentcharacteristics.Add(appChar);
+                }
+                db.SaveChanges();
 
             }
                 

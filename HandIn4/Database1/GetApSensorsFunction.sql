@@ -5,5 +5,10 @@
 )
 RETURNS TABLE AS RETURN
 (
-	SELECT Readin
+	
+	SELECT Readings.sensorId, Readings.appartmentId, Sensorcharacteristics.description
+	From Readings
+	INNER JOIN Sensorcharacteristics
+	ON Readings.appartmentId = @apartmentId
+	
 )

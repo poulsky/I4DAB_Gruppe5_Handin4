@@ -1,5 +1,13 @@
-﻿CREATE PROCEDURE [dbo].[GetApartmentSensors]
+﻿CREATE FUNCTION [dbo].[GetApSensorsFunction]
+(
 	@apartmentId int = 0
-AS
-SELECT * from dbo.GetApSensorsFunction(@apartmentId)
-
+	
+)
+RETURNS TABLE AS RETURN
+(
+	
+	SELECT Readings.sensorId, Readings.appartmentId, Sensorcharacteristics.description
+	From Readings
+	INNER JOIN Sensorcharacteristics
+	ON Readings.appartmentId = @apartmentId	
+)
