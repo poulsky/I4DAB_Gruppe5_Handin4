@@ -75,9 +75,14 @@
     <Compile Include="Migrations\201612021107298_readingvirtual.Designer.cs">
       <DependentUpon>201612021107298_readingvirtual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612060801078_logtable.cs" />
+    <Compile Include="Migrations\201612060801078_logtable.Designer.cs">
+      <DependentUpon>201612060801078_logtable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Models\Context.cs" />
+    <Compile Include="Models\LogReadings.cs" />
     <Compile Include="Utility\ApartmentcharacteristicJSONutil.cs" />
     <Compile Include="Models\Appartmentcharacteristic.cs" />
     <Compile Include="Program.cs" />
@@ -100,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612021107298_readingvirtual.resx">
       <DependentUpon>201612021107298_readingvirtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612060801078_logtable.resx">
+      <DependentUpon>201612060801078_logtable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
