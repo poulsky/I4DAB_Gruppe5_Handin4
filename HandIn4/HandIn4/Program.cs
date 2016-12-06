@@ -19,31 +19,32 @@ namespace HandIn4
                 SensorData mySensorData = new SensorData();
                 SystemData mySystemData = new SystemData();
                 Reading myReading = new Reading();
+                
                 SensorDataJSON sensorDataJson = new SensorDataJSON();
                 mySensorData = sensorDataJson.GetAppartment();
 
                 SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
                 mySystemData = sensorCharacteristicJson.GetAppartment();
-
+                
            
-                //foreach (var reading in mySensorData.reading)
-                //{
-                //    db.Readings.Add(reading);
-                //}
-                //db.SaveChanges();
+                foreach (var reading in mySensorData.reading)
+                {
+                    db.Readings.Add(reading);
+                }
+                db.SaveChanges();
 
-                //foreach (var sensorChar in mySystemData.sensorCharacteristic)
-                //{
-                //    db.Sensorcharacteristics.Add(sensorChar);
+                foreach (var sensorChar in mySystemData.sensorCharacteristic)
+                {
+                    db.Sensorcharacteristics.Add(sensorChar);
 
-                //}
-                //db.SaveChanges();
+                }
+                db.SaveChanges();
 
-                //foreach (var appChar in mySystemData.appartmentCharacteristic)
-                //{
-                //    db.Appartmentcharacteristics.Add(appChar);
-                //}
-                //db.SaveChanges();
+                foreach (var appChar in mySystemData.appartmentCharacteristic)
+                {
+                    db.Appartmentcharacteristics.Add(appChar);
+                }
+                db.SaveChanges();
 
             }
                 
