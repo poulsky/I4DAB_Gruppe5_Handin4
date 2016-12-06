@@ -5,5 +5,5 @@
 )
 RETURNS TABLE AS RETURN
 (
-	SELECT 
+	SELECT Readin
 )
