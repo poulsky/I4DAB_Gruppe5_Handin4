@@ -19,6 +19,7 @@ namespace HandIn4.Models
         public DbSet<Sensorcharacteristic> Sensorcharacteristics { get; set; }
         public DbSet<SystemData> SystemDatas { get; set; }
         public DbSet<Reading> Readings { get; set; }
+        public DbSet<LogReadings> LogReadingses { get; set; }
 
     }
 }
