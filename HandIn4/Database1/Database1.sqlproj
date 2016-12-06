@@ -69,6 +69,7 @@
     <Build Include="dbo\Tables\Readings.sql" />
     <Build Include="dbo\Tables\Appartmentcharacteristics.sql" />
     <Build Include="dbo\Tables\__MigrationHistory.sql" />
+    <Build Include="LogTrigger.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Script1.sql" />
