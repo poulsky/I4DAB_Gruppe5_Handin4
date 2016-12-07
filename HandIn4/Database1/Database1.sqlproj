@@ -76,6 +76,7 @@
     </Build>
     <Build Include="dbo\Tables\LogReadings.sql" />
     <Build Include="dbo\Functions\GetApSensorsFunction.sql" />
+    <Build Include="ViewMetaData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Script1.sql" />
