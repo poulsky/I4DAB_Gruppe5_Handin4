@@ -29,7 +29,7 @@ namespace HandIn4.Utility
                 {
                     var sensor =
                         context.Sensorcharacteristics.SingleOrDefault(
-                            t => t.sensorId == item && t.description == "(*Accumulated Energy consumption kWh*)");
+                            t => t.sensorId == item && t.description == "Accumulated Energy consumption kWh");
                     if (sensor != null)
                     {
                         sensorId = sensor.sensorId;
@@ -83,7 +83,7 @@ namespace HandIn4.Utility
             {
                 var sensor =
                     db.Sensorcharacteristics.SingleOrDefault(
-                        t => t.sensorId == item && t.description == "(*Instant  Heat Energy consumption W*)");
+                        t => t.sensorId == item && t.description == "Instant  Heat Energy consumption W");
                 if (sensor != null)
                 {
                     sensorId = sensor.sensorId;
