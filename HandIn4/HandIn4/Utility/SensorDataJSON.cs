@@ -25,7 +25,8 @@ namespace HandIn4.Utility
         public SensorData GetAppartment(string data)
         {
             //APIGetJSON<SensorData> appGet = new APIGetJSON<SensorData>("http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/dataGDL/data/2.json");
-           // Sensorcharacteristic mySensorData = JsonConvert.DeserializeObject<Sensorcharacteristic>(appGet.data);
+            // Sensorcharacteristic mySensorData = JsonConvert.DeserializeObject<Sensorcharacteristic>(appGet.data);
+            APIGetJSON<SensorData> appGet = new APIGetJSON<SensorData>(data);
             return appGet.data;
 
         }

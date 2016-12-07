@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HandIn4.Model;
 using HandIn4.Utility;
 using System.Data.Entity;
+using System.Threading;
 using HandIn4.Models;
 
 namespace HandIn4
@@ -14,39 +15,49 @@ namespace HandIn4
     {
         static void Main(string[] args)
         {
-            //using (var db = new Context())
-            //{
-            //    SensorData mySensorData = new SensorData();
-            //    SystemData mySystemData = new SystemData();
-            //    Reading myReading = new Reading();
+            using (var db = new Context())
+            {
+                SensorData mySensorData = new SensorData();
+                SystemData mySystemData = new SystemData();
+                Reading myReading = new Reading();
+
+                string sample = "http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/GFKSC0021_sample.txt";
+                string original = "http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/GFKSC002_original.txt";
+
+                SensorDataJSON sensorDataJson = new SensorDataJSON();
                 
-            //    SensorDataJSON sensorDataJson = new SensorDataJSON();
-            //    mySensorData = sensorDataJson.GetAppartment();
 
-            //    SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
-            //    mySystemData = sensorCharacteristicJson.GetAppartment();
+                //SystemDataJSON sensorCharacteristicJson = new SystemDataJSON();
+                //mySystemData = sensorCharacteristicJson.GetAppartment(sample);
+
+
+                //foreach (var sensorChar in mySystemData.sensorCharacteristic)
+                //{
+                //    db.Sensorcharacteristics.Add(sensorChar);
+
+                //}
+                //db.SaveChanges();
+
+                //foreach (var appChar in mySystemData.appartmentCharacteristic)
+                //{
+                //    db.Appartmentcharacteristics.Add(appChar);
+                //}
+                //db.SaveChanges();
+
                 
-           
-            //    foreach (var reading in mySensorData.reading)
-            //    {
-            //        db.Readings.Add(reading);
-            //    }
-            //    db.SaveChanges();
 
-            //    foreach (var sensorChar in mySystemData.sensorCharacteristic)
-            //    {
-            //        db.Sensorcharacteristics.Add(sensorChar);
-
-            //    }
-            //    db.SaveChanges();
-
-            //    foreach (var appChar in mySystemData.appartmentCharacteristic)
-            //    {
-            //        db.Appartmentcharacteristics.Add(appChar);
-            //    }
-            //    db.SaveChanges();
-
-            //}
+                //for (int i = 1; i < 10; i++)
+                //{
+                //    string data = "http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/dataGDL/data/"+i+".json";
+                //    mySensorData = sensorDataJson.GetAppartment(data);
+                //    foreach (var reading in mySensorData.reading)
+                //    {
+                //        db.Readings.Add(reading);
+                //    }
+                //    db.SaveChanges();
+                //    Thread.Sleep(5000);
+                //}
+            }
 
             var us = new UserStories();
 

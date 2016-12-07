@@ -22,10 +22,11 @@ namespace HandIn4.Utility
         //    fullservicepath = "http://" + hname + ":" + portno + "/" + servicepath;
         //}
 
-        public SystemData GetAppartment()
+        public SystemData GetAppartment(string data)
         {
-            APIGetJSON<SystemData> appGet = new APIGetJSON<SystemData>("http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/GFKSC002_original.txt");
+            //APIGetJSON<SystemData> appGet = new APIGetJSON<SystemData>("http://userportal.iha.dk/~jrt/i4dab/E14/HandIn4/GFKSC002_original.txt");
             // Sensorcharacteristic mySensorData = JsonConvert.DeserializeObject<Sensorcharacteristic>(appGet.data);
+            APIGetJSON<SystemData> appGet = new APIGetJSON<SystemData>(data);
             return appGet.data;
 
         }
