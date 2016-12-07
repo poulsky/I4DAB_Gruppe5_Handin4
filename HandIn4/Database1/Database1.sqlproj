@@ -59,10 +59,11 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="GetApartmentSensors.sql" />
-    <Build Include="GetApSensorsFunction.sql" />
+    <None Include="GetApSensorsFunction.sql" />
     <Build Include="dbo\Tables\SystemDatas.sql" />
     <Build Include="dbo\Tables\SensorDatas.sql" />
     <Build Include="dbo\Tables\Sensorcharacteristics.sql" />
@@ -70,6 +71,11 @@
     <Build Include="dbo\Tables\Appartmentcharacteristics.sql" />
     <Build Include="dbo\Tables\__MigrationHistory.sql" />
     <Build Include="LogTrigger.sql" />
+    <Build Include="..\..\..\..\..\Desktop\InsertProcedure.sql">
+      <Link>InsertProcedure.sql</Link>
+    </Build>
+    <Build Include="dbo\Tables\LogReadings.sql" />
+    <Build Include="dbo\Functions\GetApSensorsFunction.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Script1.sql" />
