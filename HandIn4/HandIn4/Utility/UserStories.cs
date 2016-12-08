@@ -29,7 +29,7 @@ namespace HandIn4.Utility
                 {
                     var sensor =
                         context.Sensorcharacteristics.SingleOrDefault(
-                            t => t.sensorId == item && t.description == "Accumulated Energy consumption kWh");
+                            t => t.sensorId == item && t.description == "Accumulated Heat Energy consumption Wh");
                     if (sensor != null)
                     {
                         sensorId = sensor.sensorId;
