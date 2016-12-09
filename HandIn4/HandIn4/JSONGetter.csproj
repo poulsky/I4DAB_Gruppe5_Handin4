@@ -95,6 +95,7 @@
     <Compile Include="Utility\APIGetJSON.cs" />
     <Compile Include="Utility\SystemDataJSON.cs" />
     <Compile Include="Utility\SensorDataJSON.cs" />
+    <Compile Include="Utility\UserInterface.cs" />
     <Compile Include="Utility\UserStories.cs" />
   </ItemGroup>
   <ItemGroup>
