@@ -48,15 +48,18 @@ namespace HandIn4.Utility
         public void DisplayFrontPage()
         {
             Console.Clear();
-            Console.WriteLine("Press H to see AccumulatedHeatEnergyPress D to see GetApartmentData");
+            Console.WriteLine("Press H to see AccumulatedHeatEnergyPress");
             Console.WriteLine("Press D to see GetApartmentData");
             Console.WriteLine("Press S to see  GetNumberOfApartmentsInSystem");
             Console.WriteLine("Press C to see  GetCurrentHeatEnergyConsumption");
             Console.WriteLine("Press A to to change address id");
             Console.WriteLine("Press E to extract Json files");
+            Console.WriteLine("Press X to exit application");
 
             var key=Console.ReadKey().KeyChar;
             key=Char.ToUpper(key);
+            if (key == 'X')
+                Environment.Exit(0);
             DisplayData(key);
 
         }
