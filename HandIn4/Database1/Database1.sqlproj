@@ -64,6 +64,9 @@
     <Build Include="LogTrigger.sql" />
     <Build Include="LogTrigger1.sql" />
     <Build Include="LogTrigger2.sql" />
+    <Build Include="InsertProcedure.sql" />
+    <Build Include="ViewMetaData.sql" />
+    <Build Include="ViewScript.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Script1.sql" />
